@@ -4,7 +4,7 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = ' qwiklabs-gcp-04-6967b1341be1'
+        PROJECT_ID = 'qwiklabs-gcp-01-751591a240ba'
         CLUSTER_NAME = 'jenkins-cd'
         LOCATION = 'us-central1-a'
         CREDENTIALS_ID = 'kubernetes'
