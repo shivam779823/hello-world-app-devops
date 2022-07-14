@@ -16,23 +16,7 @@ pipeline {
               git branch: 'main', url: 'https://github.com/shivam779823/hello-world-app-devops.git'  
             }
         }
-        stage("Build image") {
-            steps {
-                script {
-                    dockerImage = docker.build("shiva9921/hello-world-python")
-                }
-            }
-        }
-        stage("Push image") {
-            steps {
-                script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhublogin') {
-                            dockerImage.push("latest")
-                           
-                    }
-                }
-            }
-        }        
+          
         stage('Deploy to GKE') {
             steps{
 
