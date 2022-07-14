@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: shiva9921/devops
+        image: shiva9921/hello-world-python
         ports:
         - containerPort: 8080
           name: hello
